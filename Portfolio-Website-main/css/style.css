@@ -70,6 +70,15 @@ ul li a:hover {
 
 .content .image {
   width: 50%;
+  margin-bottom: 30px;
+ 
+  
+}
+@media (max-width: 480px) {
+  .content .image {
+    /* width: 30%; Adjust the width as needed */
+    display: none;
+  }
 }
 
 .content .image img {
@@ -672,3 +681,58 @@ nav {
 } */
 
 /* ######################################3 */
+/* background image */
+
+
+
+
+
+#skills {
+  height: 100%;
+  min-height: 100vh;
+  /* background: url('https://images.unsplash.com/photo-1506269996138-4c6d92fbd8a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2750&q=80'); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.skills-items {
+  list-style-type: none;
+  padding: 0;
+  margin: 3%;
+}
+
+/* styles skills circles */
+.skills-items li {
+  display: inline-block;
+  background-color: #555;
+  color: white;
+  padding: 10px;
+  margin: 15px;
+  border-radius: 50%;
+  text-transform: uppercase;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+
+.skills-items li:hover {
+  background-color: #333;
+  -webkit-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+  transition: all 0.8s ease-in-out;
+  transform-origin: center;
+  box-shadow: 0 0 20px #a640ff;
+}
+
+@media screen and (max-width: 600px) {
+  /* makes smaller circles with less margin/padding for mobile */
+  .skills-items li {
+      width: 80px;
+      height: 80px;
+      line-height: 6.5;
+      margin: 5px;
+      font-size: 12px;
+  }
+}
